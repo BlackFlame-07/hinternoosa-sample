@@ -195,53 +195,49 @@
         // 8. Specialists Doctor Tabs (100% Exact OG Aveline Studio Specialists)
     var specialistsData = [
       {
-        name: 'Dr. Elena Varga',
-        role: 'Cosmetic dentistry',
+        name: 'Murray Brown',
+        role: 'Principal & Senior Estate Specialist',
         photo: './assets/LhRdrbEme10eLb0FCf78WEGE_dr_varga.webp',
-        alt: 'Dr. Elena Varga · Cosmetic dentistry',
-        bio: 'Elena leads our cosmetic work, from whitening to full veneer cases. She plans every smile digitally first, so you can see the result before a single tooth is touched.',
-        experience: '12 years',
-        languages: 'English, Hungarian',
-        inStudio: 'Mon, Wed, Fri',
-        rating: '4.9',
-        reviews: '312 reviews'
+        alt: 'Murray Brown · Principal & Senior Estate Specialist',
+        bio: 'Guiding Noosa Hinterland acreage acquisitions for over 30 years with peerless council planning mastery and discreet client representation.',
+        experience: '32 years',
+        languages: 'English',
+        education: 'Licensed Real Estate Agent & Valuer, REIQ Fellow',
+        specialties: ["Prestige Acreage", "Title Boundaries", "Private Sanctuaries"]
       },
       {
-        name: 'Dr. Daniel Costa',
-        role: 'Orthodontics',
+        name: 'Sirah Robb',
+        role: 'Director of Prestige Sales & Private Mandates',
         photo: './assets/i9YV55qg35geFijtWVbcSvyZI_dr_costa.webp',
-        alt: 'Dr. Daniel Costa · Orthodontics',
-        bio: 'Daniel has straightened more than 1,400 smiles with clear aligners and fixed braces. He is known for realistic timelines and very few surprise extra stages.',
-        experience: '9 years',
-        languages: 'English, Portuguese',
-        inStudio: 'Tue, Thu, Sat',
-        rating: '4.8',
-        reviews: '268 reviews'
+        alt: 'Sirah Robb · Director of Prestige Sales & Private Mandates',
+        bio: 'Specializing in discreet high-value acreage mandates and architectural homesteads across Cooroy, Doonan, and Eumundi.',
+        experience: '18 years',
+        languages: 'English',
+        education: 'Bachelor of Business (Property Economics), QUT',
+        specialties: ["Off-Market Mandates", "Historic Homesteads", "Buyer Advisory"]
       },
       {
-        name: 'Dr. Sofia Reyes',
-        role: "Children's dentistry",
-        photo: './assets/TjZGJmXA2itrXL8hlBEh6zV8PA_dr_reyes.webp',
-        alt: "Dr. Sofia Reyes · Children's dentistry",
-        bio: 'Sofia makes first visits fun and fear-free. Children see her from their first tooth through their teens, with parents in the room for every appointment.',
-        experience: '7 years',
-        languages: 'English, Spanish',
-        inStudio: 'Mon, Tue, Thu',
-        rating: '4.9',
-        reviews: '204 reviews'
-      },
-      {
-        name: 'Dr. Ryan Okafor',
-        role: 'Implants & surgery',
-        photo: './assets/guZzPzCD5moyy6x2UlwrIWlV1yI_dr_okafor.webp',
-        alt: 'Dr. Ryan Okafor · Implants & surgery',
-        bio: 'Ryan places implants with guided surgery, planned from a 3D scan of your jaw. Most patients return to work the next day with a temporary tooth in place.',
+        name: 'Damian Davidson',
+        role: 'Rural Property & Land Specialist',
+        photo: './assets/a37k1yA2pG9jMh6u220b345f.webp',
+        alt: 'Damian Davidson · Rural Property & Land Specialist',
+        bio: 'Specializing in agricultural topography, soil viability, and large-scale acreage holdings with complete environmental diligence.',
         experience: '15 years',
-        languages: 'English, Yoruba',
-        inStudio: 'Wed, Thu, Fri',
-        rating: '5.0',
-        reviews: '176 reviews'
-      }
+        languages: 'English',
+        education: 'Dip. Rural Property Management',
+        specialties: ["Agricultural Topography", "Zoning Diligence", "Equestrian Holdings"]
+      },
+      {
+        name: 'Kirsty Byrne',
+        role: 'Client Concierge & Settlement Manager',
+        photo: './assets/b9487c194a28f731c54c_dr_reyes.webp',
+        alt: 'Kirsty Byrne · Client Concierge & Settlement Manager',
+        bio: 'Ensuring seamless escrow coordination, title clearances, and unhurried client communication from contract to keys.',
+        experience: '11 years',
+        languages: 'English',
+        education: 'Licensed Conveyancing & Property Operations Specialist',
+        specialties: ["Settlement Coordination", "Legal Diligence", "Client Concierge"]
+      },
     ];
 
         var specButtons = document.querySelectorAll('#team [data-framer-name="List"] button, #team button, .framer-t9vo8c button');
@@ -351,11 +347,11 @@
     var yourVisitTitle = bookSec.querySelector('[data-framer-name="Your visit"] p, [data-framer-name="Your visit"]');
 
     var treatments = {
-      'Check-up & cleaning': { name: 'Smile Assessment & Check-up', doctor: 'Dr. Elena Varga' },
-      'Whitening consultation': { name: 'Teeth Whitening Consultation', doctor: 'Dr. Elena Varga' },
-      'Aligner consultation': { name: 'Clear Aligner Assessment', doctor: 'Dr. Daniel Costa' },
-      'Implant consultation': { name: 'Dental Implant Consultation', doctor: 'Dr. Ryan Okafor' },
-      'Emergency appointment': { name: "Pediatric & Family Consultation", doctor: 'Dr. Sofia Reyes' }
+      'Check-up & cleaning': { name: 'Acreage Pavilions Consultation', doctor: 'Murray Brown' },
+      'Whitening consultation': { name: 'Historic Homesteads Consultation', doctor: 'Sirah Robb' },
+      'Aligner consultation': { name: 'Valley Retreats Consultation', doctor: 'Damian Davidson' },
+      'Implant consultation': { name: 'Equestrian Estates Consultation', doctor: 'Murray Brown' },
+      'Emergency appointment': { name: "Discreet Mandates Consultation", doctor: 'Kirsty Byrne' }
     };
 
     optionCards.forEach(function(card) {
@@ -1508,8 +1504,8 @@
       var bar = document.querySelector('.framer-1mwbh4g');
       var heroCard = document.querySelector('.framer-1jm03qa') || document.querySelector('[data-framer-name="Hero"]');
       var logoImg = document.querySelector('.framer-1hknmid img');
-      var whiteLogoSrc = './assets/YRTy2NxOkfcVHGa80qEHJySIPaY_4eedcb44.svg';
-      var darkLogoSrc = './assets/nCxPVkNYSQdYDt5mXEqXIlRVyKA_f3dd68ce.svg';
+      var whiteLogoSrc = './assets/hinternoosa_logo.svg';
+      var darkLogoSrc = './assets/hinternoosa_logo.svg';
 
       function updateNavState() {
         var barHeight = bar ? bar.offsetHeight : 72;
